@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Assembly" xml:space="preserve">
+    <value>Assembly</value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>board</value>
+  </data>
+  <data name="Boards" xml:space="preserve">
+    <value>boards</value>
+  </data>
+  <data name="BoardsQuantity" xml:space="preserve">
+    <value>Boards Quantity</value>
+  </data>
+  <data name="BoardThickness" xml:space="preserve">
+    <value>Board Thickness</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>Components</value>
+  </data>
+  <data name="ControlledImpadance" xml:space="preserve">
+    <value>Controlled Impadance</value>
+  </data>
+  <data name="CooperLinerLayer" xml:space="preserve">
+    <value>Cooper Weight on Liner Layer</value>
+  </data>
+  <data name="CooperOuterLayer" xml:space="preserve">
+    <value>Cooper Weight on Outer Layer</value>
+  </data>
+  <data name="CostImpact" xml:space="preserve">
+    <value>Cost Impact</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="Enum_ControlledImpadanceItem_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Enum_ControlledImpadanceItem_SeeNotes" xml:space="preserve">
+    <value>See Notes</value>
+  </data>
+  <data name="Enum_CooperWeightItem_High" xml:space="preserve">
+    <value>11.3oz</value>
+  </data>
+  <data name="Enum_CooperWeightItem_Low" xml:space="preserve">
+    <value>1.0oz</value>
+  </data>
+  <data name="Enum_CooperWeightItem_Medium" xml:space="preserve">
+    <value>5.7oz</value>
+  </data>
+  <data name="Enum_FluxTypeItem_Clean" xml:space="preserve">
+    <value>Clean</value>
+  </data>
+  <data name="Enum_FluxTypeItem_NoClean" xml:space="preserve">
+    <value>No Clean</value>
+  </data>
+  <data name="Enum_IPCClassItem_Class2" xml:space="preserve">
+    <value>Class 2</value>
+  </data>
+  <data name="Enum_IPCClassItem_Class3" xml:space="preserve">
+    <value>Class 3</value>
+  </data>
+  <data name="Enum_ItarItem_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Enum_ItarItem_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Enum_LeadFree_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Enum_LeadFree_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Enum_MaterialItem_Material1" xml:space="preserve">
+    <value>Material 1</value>
+  </data>
+  <data name="Enum_MaterialItem_Material2" xml:space="preserve">
+    <value>Material 2</value>
+  </data>
+  <data name="Enum_MaterialItem_Material3" xml:space="preserve">
+    <value>Material 3</value>
+  </data>
+  <data name="Enum_StackupItem_SeeNotes" xml:space="preserve">
+    <value>See Notes</value>
+  </data>
+  <data name="Enum_StackupItem_Standard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Enum_SurfaceFinishItem_DifficaltSurface" xml:space="preserve">
+    <value>Difficalt surface</value>
+  </data>
+  <data name="Enum_SurfaceFinishItem_EasySurface" xml:space="preserve">
+    <value>Easy surface</value>
+  </data>
+  <data name="Enum_SurfaceFinishItem_OneDaySurface" xml:space="preserve">
+    <value>One day surface</value>
+  </data>
+  <data name="Enum_TentingViasItem_BothSides" xml:space="preserve">
+    <value>Both sides</value>
+  </data>
+  <data name="Enum_TentingViasItem_BottomSide" xml:space="preserve">
+    <value>Bottom side</value>
+  </data>
+  <data name="Enum_TentingViasItem_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Enum_TentingViasItem_TopSide" xml:space="preserve">
+    <value>Top side</value>
+  </data>
+  <data name="Fabrication" xml:space="preserve">
+    <value>Fabrication</value>
+  </data>
+  <data name="FluxType" xml:space="preserve">
+    <value>Flux Type</value>
+  </data>
+  <data name="ImportantBoardPreferences" xml:space="preserve">
+    <value>Important Board Preferences</value>
+  </data>
+  <data name="IPCClass" xml:space="preserve">
+    <value>IPC Class</value>
+  </data>
+  <data name="ITAR" xml:space="preserve">
+    <value>ITAR</value>
+  </data>
+  <data name="LeadFree" xml:space="preserve">
+    <value>Lead Free</value>
+  </data>
+  <data name="MainWindowTitle" xml:space="preserve">
+    <value>PCB Manufacturing</value>
+  </data>
+  <data name="MakeOrder" xml:space="preserve">
+    <value>Make a Current order</value>
+  </data>
+  <data name="Manufacturing" xml:space="preserve">
+    <value>Manufacturing</value>
+  </data>
+  <data name="Material" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="OrderHeader" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="PlaceAnOrder" xml:space="preserve">
+    <value>Place an Order</value>
+  </data>
+  <data name="PreferencesHeader" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="PreferencesHint" xml:space="preserve">
+    <value>Preferences on this page supersede design notes</value>
+  </data>
+  <data name="ProjectBasics" xml:space="preserve">
+    <value>Project Basics</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="QuoteHeader" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="RunnigTotal" xml:space="preserve">
+    <value>Runnig total</value>
+  </data>
+  <data name="SaveAndContinue" xml:space="preserve">
+    <value>Save and Continue</value>
+  </data>
+  <data name="SdkscreenColor" xml:space="preserve">
+    <value>Sdkscreen Color</value>
+  </data>
+  <data name="SolderMaskColor" xml:space="preserve">
+    <value>Solder Mask Color</value>
+  </data>
+  <data name="SpecialBoardPreferences" xml:space="preserve">
+    <value>Special Board Preferences</value>
+  </data>
+  <data name="Stackup" xml:space="preserve">
+    <value>Stackup</value>
+  </data>
+  <data name="StatusHeader" xml:space="preserve">
+    <value>Automation</value>
+  </data>
+  <data name="StatusPlaceholderText" xml:space="preserve">
+    <value>Describe your design and receive real-time design feedback for manufacturing and component sourcing. If you update your design we will provide an update quote</value>
+  </data>
+  <data name="SurfaceFinish" xml:space="preserve">
+    <value>Surface Finish</value>
+  </data>
+  <data name="TentingVias" xml:space="preserve">
+    <value>Tenting for Vias</value>
+  </data>
+  <data name="TimeImpact" xml:space="preserve">
+    <value>Time Impact</value>
+  </data>
+  <data name="ValidValues" xml:space="preserve">
+    <value>Valid Values</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="WillBeDeliv" xml:space="preserve">
+    <value>will be delivered in</value>
+  </data>
+  <data name="Your" xml:space="preserve">
+    <value>Your</value>
+  </data>
+  <data name="YourOrder" xml:space="preserve">
+    <value>There are no orders yet. 
+ Your orders will appear here.</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Zipcode</value>
+  </data>
+  <data name="ZipcodeToolTip" xml:space="preserve">
+    <value>Required to estimate shipping time</value>
+  </data>
+</root>

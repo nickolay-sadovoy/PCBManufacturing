@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{113423E5-CCFE-4CC7-A9EB-41BC2866147B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PCBManufacturing.Models</RootNamespace>
+    <AssemblyName>PCBManufacturing.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\IExpandedItem.cs" />
+    <Compile Include="Contracts\IMainItem.cs" />
+    <Compile Include="Contracts\ISaveable.cs" />
+    <Compile Include="Contracts\IViewModel.cs" />
+    <Compile Include="Enums\AutomationStatus.cs" />
+    <Compile Include="Enums\ControlledImpadanceItem.cs" />
+    <Compile Include="Enums\CooperWeightItem.cs" />
+    <Compile Include="Enums\FluxTypeItem.cs" />
+    <Compile Include="Enums\IPCClassItem.cs" />
+    <Compile Include="Enums\ItarItem.cs" />
+    <Compile Include="Enums\LeadFree.cs" />
+    <Compile Include="Enums\MainItemType.cs" />
+    <Compile Include="Enums\MaterialItem.cs" />
+    <Compile Include="Enums\Ratio.cs" />
+    <Compile Include="Enums\StackupItem.cs" />
+    <Compile Include="Enums\SurfaceFinishItem.cs" />
+    <Compile Include="Enums\TetntingViasItem.cs" />
+    <Compile Include="Extensions\PropertyChangedExtensions.cs" />
+    <Compile Include="Models\EnumValues.cs" />
+    <Compile Include="Models\FabricationItem.cs" />
+    <Compile Include="Models\NotifyPropertyChangedModel.cs" />
+    <Compile Include="Models\OrderInfo.cs" />
+    <Compile Include="Models\PreferencesInfo.cs" />
+    <Compile Include="Models\QuoteParameter.cs" />
+    <Compile Include="Models\RelayCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

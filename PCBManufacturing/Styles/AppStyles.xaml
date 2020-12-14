@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PCBManufacturing.Styles">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml"/>
+        <ResourceDictionary Source="Pathes.xaml"/>
+        <ResourceDictionary Source="ThicknessStyles.xaml"/>
+
+        <ResourceDictionary Source="ButtonStyles.xaml"/>
+        <ResourceDictionary Source="TextBoxStyles.xaml"/>
+        <ResourceDictionary Source="TextBlockStyles.xaml"/>
+        <ResourceDictionary Source="ComboBoxStyles.xaml"/>
+        <ResourceDictionary Source="ExpanderStyles.xaml"/>
+        <ResourceDictionary Source="ScrollStyles.xaml"/>
+        <ResourceDictionary Source="RadioButtonStyles.xaml"/>
+        <ResourceDictionary Source="ItemCollectionStyles.xaml"/>
+        <ResourceDictionary Source="TreeViewStyles.xaml"/>
+        <ResourceDictionary Source="CheckBoxStyles.xaml"/>
+        <ResourceDictionary Source="DataGridStyles.xaml"/>
+
+        <ResourceDictionary Source="DataTemplates.xaml"/>
+        <ResourceDictionary Source="ControlStyles.xaml"/>
+        
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

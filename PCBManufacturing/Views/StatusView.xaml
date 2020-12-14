@@ -1,0 +1,125 @@
+﻿<UserControl x:Class="PCBManufacturing.Views.StatusView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PCBManufacturing.Views" 
+             xmlns:enums="clr-namespace:PCBManufacturing.Models.Enums;assembly=PCBManufacturing.Models"
+             xmlns:resx="clr-namespace:PCBManufacturing.Properties"
+             mc:Ignorable="d" 
+             xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="100" MaxWidth="150" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" MinHeight="70"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="1"
+                   Margin="{StaticResource LeftRightDefault}"
+                   Style="{StaticResource SemiBoldTextBlockStyle}"
+                   Text="{x:Static resx:Resources.StatusHeader}"/>
+        
+        <Grid Grid.Row="1"
+              Grid.Column="0"
+              Margin="{StaticResource RightDefault}">
+            <Border Background="Black"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Margin="{StaticResource TopRightBottomDefault}">
+                <Image Source="{Binding ItemImageURI}"
+                       Stretch="Uniform"/>
+            </Border>
+            <ContentControl Width="20"
+                            Height="20"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom">
+                <ContentControl.Style>
+                    <Style TargetType="ContentControl">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Status}" Value="{x:Static enums:AutomationStatus.Ok}">
+                                <Setter Property="Content" Value="{StaticResource OkLableControl}"/>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Status}" Value="{x:Static enums:AutomationStatus.Failed}">
+                                <Setter Property="Content" Value="{StaticResource FailedLableControl}"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ContentControl.Style>
+            </ContentControl>
+        </Grid>
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   TextWrapping="Wrap"
+                   Margin="{StaticResource TopDefault}">
+            <Run Text="{x:Static resx:Resources.Your}"/>
+            <Run Text="{Binding OrderInfo.BoardsCount}"/>
+            <Run>
+                <Run.Style>
+                    <Style TargetType="Run">
+                        <Setter Property="Text" Value="{x:Static resx:Resources.Boards}" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding OrderInfo.DaysRequired, Mode=OneWay}" Value="1">
+                                <Setter Property="Text" Value="{x:Static resx:Resources.Board}" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding OrderInfo.DaysRequired, Mode=OneWay}" Value="0">
+                                <Setter Property="Text" Value="" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Run.Style>
+            </Run>
+            <Run Text="{x:Static resx:Resources.WillBeDeliv}"/>
+            <Run Text="{Binding OrderInfo.DaysRequired}"/>
+            <Run>
+                <Run.Style>
+                    <Style TargetType="Run">
+                        <Setter Property="Text" Value="{x:Static resx:Resources.Days}" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding OrderInfo.DaysRequired, Mode=OneWay}" Value="1">
+                                <Setter Property="Text" Value="{x:Static resx:Resources.Day}" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding OrderInfo.DaysRequired, Mode=OneWay}" Value="0">
+                                <Setter Property="Text" Value="" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Run.Style>
+            </Run>
+            <LineBreak/>
+            <Run Text="{Binding OrderInfo.TotalCost, Mode=OneWay, StringFormat={}$ {0}}"/>
+            <TextBlock.Style>
+                <Style TargetType="TextBlock" BasedOn="{StaticResource RegularTextBlockStyle}">
+                    <Setter Property="Visibility" Value="Visible"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding OrderInfo}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   TextWrapping="Wrap"
+                   Text="{x:Static resx:Resources.StatusPlaceholderText}"
+                   Margin="{StaticResource TopDefault}">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock" BasedOn="{StaticResource RegularTextBlockStyle}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding OrderInfo}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</UserControl>
